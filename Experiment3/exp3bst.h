@@ -79,6 +79,8 @@ typename BinarySearchTree<T>::BSTNodePtr& BinarySearchTree<T>::SearchImpl(
 
 	if (!current_node)
 	{
+		// 到达空结点时并未进行比较，因此撤销比较计数
+		compare_count--;
 		return const_cast<BSTNodePtr&>(current_node);
 	}
 	else if (value == current_node->value)

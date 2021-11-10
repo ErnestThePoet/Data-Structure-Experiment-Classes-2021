@@ -137,7 +137,7 @@ void SearchPresenter<T>::BeginPresentation()
 
 	// BST Sorted test
 	cout 
-		<< format(line_message_format_, " TEST BEGINS : BST, 1024 SORTED INTs ") 
+		<< format(line_message_format_, " TEST BEGINS : BST, 1024 SORTED INTs ")
 		<< endl;
 	cout << kLongDashLine << endl << "Inserting test data..." << endl;
 
